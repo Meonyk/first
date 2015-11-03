@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background: #efefef url(images/paisley.png);
+    margin: 0;
+    padding: 0;
+ }
+#menu {
+    width: 55px;
+    height: 635px;
+    position: relative;
+    background: #efefef url(images/diamond_upholstery.png);
+}
+#menu > p {
+    height: 10px;
+    width: 55px;
+    margin-right: 5px;
+    padding: 0px;
+    overflov: hidden;
+
+}
+#menu > button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 60px;
+    background: url(images/button3.png);
+   
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
+}

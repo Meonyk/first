@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" href="style.css" type="text/css">
+<script type="text/javascript">
+$(document).ready(function (){
+    $('#menu > button').click(function (){
+        var o=$(this);
+        var w,o;
+        if (o.text()=='a') {
+            o.text('<<');
+            
+            w='20%';
+            o=1;
+        } else {
+            o.text('a');
+            w='55px';
+            o=0;
+        };
+        $("#menu").animate({
+            width: w
+        });
+        $("#menu > p").animate({
+            opacity: o
+        });
+    });
+});
+</script>
+
+</head>
+<body>
+<div id='menu'>
+    <p>lalkameo</p>
+    <button>a</button>
+</div>
+
+</body>
+</html>
